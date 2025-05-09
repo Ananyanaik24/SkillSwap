@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #fff8e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Search Page */
+.search-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input,
+.dropdown {
+  margin: 10px 5px;
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.search-button {
+  padding: 11px 25px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: #e6b800;
+}
+
+/* REMOVE GRID FOR SINGLE CARD */
+.skills-list {
+  display: none;
+}
+
+/* Card (centered, one at a time) */
+.skill-card {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-top: 30px;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.skill-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffcc00;
+  margin: 0 auto 12px;
+  display: block;
+}
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+.skill-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.match-bio {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+  font-style: italic;
+}
+
+/* Match Buttons */
+.match-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn-match {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-skip {
+  background-color: white;
+  color: #f44336;
+  border: 2px solid #f44336;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-match:hover {
+  background-color: #388e3c;
+}
+
+.btn-skip:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+}
+
+.nav-item {
+  color: #999;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  color: #ffb300;
+}
+.skill-card.swipe-left {
+  transform: translateX(-400px) rotate(-15deg);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.skill-card.swipe-right {
+  transform: translateX(400px) rotate(15deg);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.skill-card {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.swipe-left {
+  transform: translateX(-400px);
+  opacity: 0;
+}
+
+.swipe-right {
+  transform: translateX(400px);
+  opacity: 0;
+}

@@ -1,0 +1,85 @@
+.match-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 120px;
+  min-height: 100vh;
+  background: #fff7e6;
+  text-align: center;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.profile-card img.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.match-button, .skip-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.match-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.skip-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* Swipe animations */
+.swipe-left {
+  transform: translateX(-400px) rotate(-20deg);
+  opacity: 0;
+}
+
+.swipe-right {
+  transform: translateX(400px) rotate(20deg);
+  opacity: 0;
+}
+
+/* Bottom Navbar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  font-size: 24px;
+  color: black;
+}
+
+.nav-item.active {
+  color: #ff4500;
+}
